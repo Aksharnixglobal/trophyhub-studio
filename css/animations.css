@@ -1,0 +1,343 @@
+/* Animation Styles for TrophyHub Studio */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale Up Animation */
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply Animations to Elements */
+.hero-content {
+    animation: fadeIn 1s ease-out;
+}
+
+.hero-title {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.hero-subtitle {
+    animation: slideInRight 0.8s ease-out 0.2s backwards;
+}
+
+.hero-buttons {
+    animation: fadeIn 1s ease-out 0.4s backwards;
+}
+
+.feature-card {
+    animation: scaleUp 0.6s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+.feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+.step {
+    animation: fadeIn 0.8s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.step:nth-child(1) { animation-delay: 0.1s; }
+.step:nth-child(2) { animation-delay: 0.2s; }
+.step:nth-child(3) { animation-delay: 0.3s; }
+.step:nth-child(4) { animation-delay: 0.4s; }
+
+.product-card {
+    animation: fadeIn 0.6s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.product-card:nth-child(1) { animation-delay: 0.05s; }
+.product-card:nth-child(2) { animation-delay: 0.1s; }
+.product-card:nth-child(3) { animation-delay: 0.15s; }
+.product-card:nth-child(4) { animation-delay: 0.2s; }
+.product-card:nth-child(5) { animation-delay: 0.25s; }
+.product-card:nth-child(6) { animation-delay: 0.3s; }
+.product-card:nth-child(7) { animation-delay: 0.35s; }
+.product-card:nth-child(8) { animation-delay: 0.4s; }
+
+.whatsapp-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+    animation: pulse 0.5s ease-in-out;
+}
+
+.feature-icon {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    animation: bounce 0.6s ease;
+}
+
+.step-number {
+    transition: all 0.3s ease;
+}
+
+.step:hover .step-number {
+    animation: rotate 0.6s ease;
+}
+
+.badge {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Loading Shimmer Effect */
+.product-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: shimmer 2s infinite;
+    z-index: 1;
+}
+
+.product-image img {
+    position: relative;
+    z-index: 2;
+}
+
+/* Smooth Transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+a, button, .btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Page Load Animation */
+body {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Scroll Reveal Effect */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Glow Effect */
+.btn-primary:hover,
+.btn-whatsapp:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Image Zoom on Hover */
+.product-image img {
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+/* Text Gradient Animation */
+@keyframes textGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-title {
+    background: linear-gradient(
+        45deg,
+        var(--primary-gold),
+        var(--secondary-gold),
+        var(--primary-gold)
+    );
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradient 3s ease infinite, slideInLeft 0.8s ease-out;
+}
+
+/* Button Ripple Effect */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:active::before {
+    width: 300px;
+    height: 300px;
+    animation: ripple 0.6s ease-out;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Stagger Animation for Filter Buttons */
+.filter-btn {
+    animation: fadeIn 0.4s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.filter-btn:nth-child(1) { animation-delay: 0.05s; }
+.filter-btn:nth-child(2) { animation-delay: 0.1s; }
+.filter-btn:nth-child(3) { animation-delay: 0.15s; }
+.filter-btn:nth-child(4) { animation-delay: 0.2s; }
+.filter-btn:nth-child(5) { animation-delay: 0.25s; }
+
+/* Form Input Focus Animation */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Delivery Card Animation */
+.delivery-card {
+    animation: fadeIn 0.8s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.delivery-card:nth-child(1) { animation-delay: 0.1s; }
+.delivery-card:nth-child(2) { animation-delay: 0.2s; }
+
+/* Info Card Animation */
+.info-card {
+    animation: scaleUp 0.6s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.info-card:nth-child(1) { animation-delay: 0.1s; }
+.info-card:nth-child(2) { animation-delay: 0.2s; }
+.info-card:nth-child(3) { animation-delay: 0.3s; }
