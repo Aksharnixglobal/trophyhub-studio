@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a custom quote for trophies and medals">
+    <title>Request Quote - TrophyHub Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🏆 TrophyHub Studio</h1>
+                <p class="tagline">Your Victory, Our Craft</p>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="quote.html">Get Quote</a>
+                <a href="tel:+17737506813" class="nav-phone">📞 Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Quote Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h2>Request a Custom Quote</h2>
+            <p>Share your requirements and we'll get back to you quickly with the best pricing and delivery options.</p>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-form-wrapper">
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone / WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+1 (___) ___-____">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="productType">Product Type *</label>
+                            <select id="productType" name="productType" required>
+                                <option value="">Select product type</option>
+                                <option value="Cricket Trophy">Cricket Trophy</option>
+                                <option value="Volleyball Trophy">Volleyball Trophy</option>
+                                <option value="Medal - Gold">Medal - Gold</option>
+                                <option value="Medal - Silver">Medal - Silver</option>
+                                <option value="Medal - Bronze">Medal - Bronze</option>
+                                <option value="School Trophy">School Trophy</option>
+                                <option value="Custom Design">Custom Design</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity *</label>
+                            <input type="number" id="quantity" name="quantity" required min="1" placeholder="Enter quantity">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eventType">Event Type *</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="">Select event type</option>
+                                <option value="Cricket">Cricket</option>
+                                <option value="Volleyball">Volleyball</option>
+                                <option value="School Event">School Event</option>
+                                <option value="Corporate Event">Corporate Event</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDate">Event Date</label>
+                            <input type="date" id="eventDate" name="eventDate" placeholder="When do you need it?">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="engraving">Custom Engraving Required?</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="engraving" value="Yes" checked> Yes
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="engraving" value="No"> No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="delivery">Delivery Preference *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="delivery" value="Pickup" checked> Pickup
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="delivery" value="DFW Delivery"> DFW Delivery
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="logo">Upload Logo (Optional)</label>
+                        <input type="file" id="logo" name="logo" accept="image/*">
+                        <small>We'll follow up via WhatsApp for logo if needed</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Requirements / Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your needs..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">📱 Send Quote Request via WhatsApp</button>
+                </form>
+
+                <div class="quote-info">
+                    <div class="info-card">
+                        <h3>💬 Quick Response</h3>
+                        <p>We typically respond within 1-2 hours during business hours</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>💰 Custom Pricing</h3>
+                        <p>Pricing based on quantity, customization, and timeline</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🚚 Fast Delivery</h3>
+                        <p>Pickup or DFW delivery - same day options available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🏆 TrophyHub Studio</h3>
+                    <p>Your Victory, Our Craft.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>📍 DFW, Texas</p>
+                    <p>📞 <a href="tel:+17737506813">+1 (773) 750-6813</a></p>
+                    <p>💬 <a href="https://wa.me/17737506813">WhatsApp</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TrophyHub Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20to%20get%20a%20custom%20quote%20for%20trophies.%0A%0AThanks!" class="whatsapp-float" target="_blank">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/whatsapp.js"></script>
+</body>
+</html>
