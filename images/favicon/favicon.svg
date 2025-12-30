@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C5A572;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Trophy Base -->
+  <rect x="30" y="75" width="40" height="8" fill="url(#goldGradient)" rx="2"/>
+  <rect x="45" y="65" width="10" height="10" fill="url(#goldGradient)"/>
+  
+  <!-- Trophy Cup -->
+  <path d="M 25 25 L 25 45 Q 25 55, 35 60 L 45 65 L 55 65 L 65 60 Q 75 55, 75 45 L 75 25 Z" 
+        fill="url(#goldGradient)" stroke="#0D1321" stroke-width="2"/>
+  
+  <!-- Trophy Handles -->
+  <path d="M 25 30 Q 15 30, 15 40 Q 15 45, 20 45 L 25 42" 
+        fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+  <path d="M 75 30 Q 85 30, 85 40 Q 85 45, 80 45 L 75 42" 
+        fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+  
+  <!-- Trophy Top -->
+  <ellipse cx="50" cy="25" rx="25" ry="5" fill="url(#goldGradient)" stroke="#0D1321" stroke-width="1"/>
+  
+  <!-- Letters TH -->
+  <text x="50" y="48" font-family="Arial, sans-serif" font-size="18" font-weight="bold" 
+        text-anchor="middle" fill="#0D1321">TH</text>
+</svg>
