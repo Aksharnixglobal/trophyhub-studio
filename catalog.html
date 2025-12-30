@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse our premium trophy and medal catalog - Custom quotes available">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Browse our premium trophy and medal catalog - Custom engraving available. Cricket, Volleyball, School awards and more. Request a quote today!">
+    <meta name="keywords" content="trophy catalog, medal catalog, custom awards, cricket trophies, volleyball trophies, school medals, DFW">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Trophy & Medal Catalog - TrophyHub Studio">
+    <meta property="og:description" content="Browse our extensive collection of premium trophies and medals">
+    <meta property="og:type" content="website">
+    
     <title>Catalog - TrophyHub Studio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h1>🏆 TrophyHub Studio</h1>
+                <h1><i class="fas fa-trophy icon"></i>TrophyHub Studio</h1>
                 <p class="tagline">Your Victory, Our Craft</p>
             </div>
             <nav class="nav">
                 <a href="index.html">Home</a>
-                <a href="catalog.html">Catalog</a>
+                <a href="catalog.html" class="active">Catalog</a>
+                <a href="about.html">About</a>
                 <a href="quote.html">Get Quote</a>
-                <a href="tel:+17737506813" class="nav-phone">📞 Call Now</a>
+                <a href="tel:+17737506813" class="nav-phone"><i class="fas fa-phone-alt"></i> Call Now</a>
             </nav>
         </div>
     </header>
@@ -29,8 +48,8 @@
     <!-- Catalog Hero -->
     <section class="page-hero">
         <div class="container">
-            <h2>Our Trophy & Medal Catalog</h2>
-            <p>Browse our collection and request a custom quote</p>
+            <h2>Our Premium Trophy & Medal Catalog</h2>
+            <p>Browse our collection and request a custom quote with competitive pricing</p>
         </div>
     </section>
 
@@ -38,11 +57,11 @@
     <section class="catalog-filter">
         <div class="container">
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All Products</button>
-                <button class="filter-btn" data-filter="cricket">Cricket</button>
-                <button class="filter-btn" data-filter="volleyball">Volleyball</button>
-                <button class="filter-btn" data-filter="medals">Medals</button>
-                <button class="filter-btn" data-filter="school">School</button>
+                <button class="filter-btn active" data-filter="all"><i class="fas fa-th"></i> All Products</button>
+                <button class="filter-btn" data-filter="cricket"><i class="fas fa-baseball-ball"></i> Cricket</button>
+                <button class="filter-btn" data-filter="volleyball"><i class="fas fa-volleyball-ball"></i> Volleyball</button>
+                <button class="filter-btn" data-filter="medals"><i class="fas fa-medal"></i> Medals</button>
+                <button class="filter-btn" data-filter="school"><i class="fas fa-graduation-cap"></i> School</button>
             </div>
         </div>
     </section>
@@ -53,114 +72,122 @@
             <div class="product-grid" id="productGrid">
                 
                 <!-- Cricket Trophy 1 -->
-                <div class="product-card" data-category="cricket">
+                <div class="product-card scroll-reveal" data-category="cricket">
                     <div class="product-image">
                         <img src="images/products/cricket-trophy-1.jpg" alt="Cricket Champion Trophy Gold" onerror="this.src='https://via.placeholder.com/300x350/FFD700/000000?text=Cricket+Trophy+Gold'">
-                        <span class="badge">Engraving Available</span>
+                        <span class="badge"><i class="fas fa-pen-fancy"></i> Engraving Available</span>
                     </div>
                     <div class="product-info">
                         <h3>Cricket Champion Trophy – Gold</h3>
-                        <p class="product-details">Sizes: 12", 15", 18", 24"</p>
-                        <p class="product-desc">Premium gold-finished cricket trophy for champions</p>
-                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Cricket%20Champion%20Trophy%20%E2%80%93%20Gold%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote">Get Custom Quote</a>
+                        <p class="product-details"><i class="fas fa-ruler-vertical"></i> Sizes: 12", 15", 18", 24"</p>
+                        <p class="product-desc">Premium gold-finished cricket trophy for champions. Perfect for tournaments and special recognitions.</p>
+                        <p class="product-price">Starting at $25 <span class="price-label">/ piece</span></p>
+                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Cricket%20Champion%20Trophy%20%E2%80%93%20Gold%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote"><i class="fab fa-whatsapp"></i> Get Custom Quote</a>
                     </div>
                 </div>
 
                 <!-- Cricket Trophy 2 -->
-                <div class="product-card" data-category="cricket">
+                <div class="product-card scroll-reveal" data-category="cricket">
                     <div class="product-image">
                         <img src="images/products/cricket-trophy-2.jpg" alt="Cricket Player of Match Trophy" onerror="this.src='https://via.placeholder.com/300x350/C0C0C0/000000?text=Cricket+Trophy+Silver'">
-                        <span class="badge">Engraving Available</span>
+                        <span class="badge"><i class="fas fa-pen-fancy"></i> Engraving Available</span>
                     </div>
                     <div class="product-info">
                         <h3>Cricket Player of the Match Trophy</h3>
-                        <p class="product-details">Sizes: 10", 12", 15"</p>
-                        <p class="product-desc">Perfect for individual player recognition</p>
-                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Cricket%20Player%20of%20the%20Match%20Trophy%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote">Get Custom Quote</a>
+                        <p class="product-details"><i class="fas fa-ruler-vertical"></i> Sizes: 10", 12", 15"</p>
+                        <p class="product-desc">Perfect for individual player recognition with elegant silver finish and custom engraving options.</p>
+                        <p class="product-price">Starting at $20 <span class="price-label">/ piece</span></p>
+                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Cricket%20Player%20of%20the%20Match%20Trophy%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote"><i class="fab fa-whatsapp"></i> Get Custom Quote</a>
                     </div>
                 </div>
 
                 <!-- Volleyball Trophy 1 -->
-                <div class="product-card" data-category="volleyball">
+                <div class="product-card scroll-reveal" data-category="volleyball">
                     <div class="product-image">
                         <img src="images/products/volleyball-trophy-1.jpg" alt="Volleyball Tournament Trophy" onerror="this.src='https://via.placeholder.com/300x350/FFD700/000000?text=Volleyball+Trophy+Premium'">
-                        <span class="badge">Engraving Available</span>
+                        <span class="badge"><i class="fas fa-pen-fancy"></i> Engraving Available</span>
                     </div>
                     <div class="product-info">
                         <h3>Volleyball Tournament Trophy – Premium</h3>
-                        <p class="product-details">Sizes: 15", 18", 24"</p>
-                        <p class="product-desc">Elegant design for volleyball tournaments</p>
-                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Volleyball%20Tournament%20Trophy%20%E2%80%93%20Premium%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote">Get Custom Quote</a>
+                        <p class="product-details"><i class="fas fa-ruler-vertical"></i> Sizes: 15", 18", 24"</p>
+                        <p class="product-desc">Elegant design for volleyball tournaments with premium gold finish and detailed sports motif.</p>
+                        <p class="product-price">Starting at $30 <span class="price-label">/ piece</span></p>
+                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Volleyball%20Tournament%20Trophy%20%E2%80%93%20Premium%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote"><i class="fab fa-whatsapp"></i> Get Custom Quote</a>
                     </div>
                 </div>
 
                 <!-- Volleyball Trophy 2 -->
-                <div class="product-card" data-category="volleyball">
+                <div class="product-card scroll-reveal" data-category="volleyball">
                     <div class="product-image">
                         <img src="images/products/volleyball-trophy-2.jpg" alt="Volleyball Team Trophy" onerror="this.src='https://via.placeholder.com/300x350/C0C0C0/000000?text=Volleyball+Team+Trophy'">
-                        <span class="badge">Engraving Available</span>
+                        <span class="badge"><i class="fas fa-pen-fancy"></i> Engraving Available</span>
                     </div>
                     <div class="product-info">
                         <h3>Volleyball Team Trophy</h3>
-                        <p class="product-details">Sizes: 12", 15", 18"</p>
-                        <p class="product-desc">Celebrate team achievements</p>
-                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Volleyball%20Team%20Trophy%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote">Get Custom Quote</a>
+                        <p class="product-details"><i class="fas fa-ruler-vertical"></i> Sizes: 12", 15", 18"</p>
+                        <p class="product-desc">Celebrate team achievements with this elegant silver finish volleyball trophy.</p>
+                        <p class="product-price">Starting at $22 <span class="price-label">/ piece</span></p>
+                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Volleyball%20Team%20Trophy%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote"><i class="fab fa-whatsapp"></i> Get Custom Quote</a>
                     </div>
                 </div>
 
                 <!-- Medal 1 -->
-                <div class="product-card" data-category="medals">
+                <div class="product-card scroll-reveal" data-category="medals">
                     <div class="product-image">
                         <img src="images/products/medal-gold.jpg" alt="Gold Medal Custom Ribbon" onerror="this.src='https://via.placeholder.com/300x350/FFD700/000000?text=Gold+Medal'">
-                        <span class="badge">Custom Ribbon</span>
+                        <span class="badge"><i class="fas fa-ribbon"></i> Custom Ribbon</span>
                     </div>
                     <div class="product-info">
                         <h3>Gold Medal with Custom Ribbon</h3>
-                        <p class="product-details">2.5" & 3" diameter options</p>
-                        <p class="product-desc">Premium gold medals with personalized ribbons</p>
-                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Gold%20Medal%20with%20Custom%20Ribbon%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote">Get Custom Quote</a>
+                        <p class="product-details"><i class="fas fa-medal"></i> Sizes: 2.5" & 3" diameter</p>
+                        <p class="product-desc">Premium gold medals with personalized ribbons in your choice of colors and text.</p>
+                        <p class="product-price">Starting at $8 <span class="price-label">/ piece</span></p>
+                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Gold%20Medal%20with%20Custom%20Ribbon%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote"><i class="fab fa-whatsapp"></i> Get Custom Quote</a>
                     </div>
                 </div>
 
                 <!-- Medal 2 -->
-                <div class="product-card" data-category="medals school">
+                <div class="product-card scroll-reveal" data-category="medals school">
                     <div class="product-image">
                         <img src="images/products/medal-silver.jpg" alt="Silver Medal School" onerror="this.src='https://via.placeholder.com/300x350/C0C0C0/000000?text=Silver+Medal'">
-                        <span class="badge">Custom Ribbon</span>
+                        <span class="badge"><i class="fas fa-ribbon"></i> Custom Ribbon</span>
                     </div>
                     <div class="product-info">
                         <h3>Silver Medal – School Achievement</h3>
-                        <p class="product-details">2.5" & 3" diameter options</p>
-                        <p class="product-desc">Perfect for academic and sports achievements</p>
-                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Silver%20Medal%20%E2%80%93%20School%20Achievement%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote">Get Custom Quote</a>
+                        <p class="product-details"><i class="fas fa-medal"></i> Sizes: 2.5" & 3" diameter</p>
+                        <p class="product-desc">Perfect for academic and sports achievements with quality silver finish.</p>
+                        <p class="product-price">Starting at $6 <span class="price-label">/ piece</span></p>
+                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Silver%20Medal%20%E2%80%93%20School%20Achievement%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote"><i class="fab fa-whatsapp"></i> Get Custom Quote</a>
                     </div>
                 </div>
 
                 <!-- School Trophy 1 -->
-                <div class="product-card" data-category="school">
+                <div class="product-card scroll-reveal" data-category="school">
                     <div class="product-image">
                         <img src="images/products/school-trophy-1.jpg" alt="Academic Excellence Trophy" onerror="this.src='https://via.placeholder.com/300x350/4169E1/FFFFFF?text=Academic+Trophy'">
-                        <span class="badge">Engraving Available</span>
+                        <span class="badge"><i class="fas fa-pen-fancy"></i> Engraving Available</span>
                     </div>
                     <div class="product-info">
                         <h3>Academic Excellence Trophy</h3>
-                        <p class="product-details">Sizes: 10", 12", 15"</p>
-                        <p class="product-desc">Celebrate academic achievements</p>
-                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Academic%20Excellence%20Trophy%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote">Get Custom Quote</a>
+                        <p class="product-details"><i class="fas fa-ruler-vertical"></i> Sizes: 10", 12", 15"</p>
+                        <p class="product-desc">Celebrate academic achievements with this distinguished trophy featuring academic motifs.</p>
+                        <p class="product-price">Starting at $18 <span class="price-label">/ piece</span></p>
+                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Academic%20Excellence%20Trophy%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote"><i class="fab fa-whatsapp"></i> Get Custom Quote</a>
                     </div>
                 </div>
 
                 <!-- School Medal -->
-                <div class="product-card" data-category="school medals">
+                <div class="product-card scroll-reveal" data-category="school medals">
                     <div class="product-image">
                         <img src="images/products/sports-day-medal.jpg" alt="Sports Day Medal" onerror="this.src='https://via.placeholder.com/300x350/CD7F32/FFFFFF?text=Bronze+Medal'">
-                        <span class="badge">Custom Ribbon</span>
+                        <span class="badge"><i class="fas fa-ribbon"></i> Custom Ribbon</span>
                     </div>
                     <div class="product-info">
                         <h3>Sports Day Champion Medal</h3>
-                        <p class="product-details">Gold, Silver, Bronze available</p>
-                        <p class="product-desc">Perfect for school sports events</p>
-                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Sports%20Day%20Champion%20Medal%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote">Get Custom Quote</a>
+                        <p class="product-details"><i class="fas fa-medal"></i> Gold, Silver, Bronze available</p>
+                        <p class="product-desc">Perfect for school sports events with colorful custom ribbons and quality finish.</p>
+                        <p class="product-price">Starting at $5 <span class="price-label">/ piece</span></p>
+                        <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20a%20custom%20quote.%0A%0AProduct%3A%20Sports%20Day%20Champion%20Medal%0AQuantity%3A%20___%0AEvent%20Date%3A%20___%0ACustom%20Engraving%3A%20Yes%20%2F%20No%0ADelivery%3A%20Pickup%20%2F%20DFW%20Delivery" class="btn btn-quote"><i class="fab fa-whatsapp"></i> Get Custom Quote</a>
                     </div>
                 </div>
 
@@ -172,15 +199,44 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>🏆 TrophyHub Studio</h3>
+                <div class="footer-section footer-brand">
+                    <h3><i class="fas fa-trophy"></i> TrophyHub Studio</h3>
                     <p>Your Victory, Our Craft.</p>
+                    <p>Premium custom trophies and medals for Cricket, Volleyball, Schools, and Special Events across DFW.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/17737506813" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+17737506813" class="social-link" title="Phone"><i class="fas fa-phone-alt"></i></a>
+                        <a href="mailto:info@trophyhubstudio.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="footer-contact">
+                
+                <div class="footer-section footer-links-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="catalog.html"><i class="fas fa-award"></i> Catalog</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="quote.html"><i class="fas fa-file-alt"></i> Get Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
                     <h4>Contact Us</h4>
-                    <p>📍 DFW, Texas</p>
-                    <p>📞 <a href="tel:+17737506813">+1 (773) 750-6813</a></p>
-                    <p>💬 <a href="https://wa.me/17737506813">WhatsApp</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> DFW, Texas</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+17737506813">+1 (773) 750-6813</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/17737506813">WhatsApp</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@trophyhubstudio.com">info@trophyhubstudio.com</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for exclusive offers</p>
+                    <div class="footer-newsletter">
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -190,10 +246,16 @@
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20to%20get%20a%20custom%20quote%20for%20trophies.%0A%0AThanks!" class="whatsapp-float" target="_blank">
-        <span class="whatsapp-icon">💬</span>
+    <a href="https://wa.me/17737506813?text=Hi%20TrophyHub%20Studio%2C%0A%0AI'd%20like%20to%20get%20a%20custom%20quote%20for%20trophies.%0A%0AThanks!" class="whatsapp-float" title="Chat on WhatsApp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
     <script src="js/catalog.js"></script>
 </body>
