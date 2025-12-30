@@ -117,9 +117,4 @@
     --gradient-overlay: linear-gradient(180deg, rgba(10, 17, 40, 0.7) 0%, rgba(13, 19, 33, 0.9) 100%);
 }
 
-/* Dark mode support (future enhancement) */
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* Override colors for dark mode if needed */
-    }
-}
+

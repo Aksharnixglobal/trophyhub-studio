@@ -35,16 +35,16 @@
             whatsappMessage += `I'd like to request a custom quote:\n\n`;
             whatsappMessage += `📝 Name: ${name}\n`;
             whatsappMessage += `📞 Phone: ${phone}\n\n`;
-            whatsappMessage += `🏆 Product Type: ${productType}\n`;
-            whatsappMessage += `🔢 Quantity: ${quantity}\n`;
-            whatsappMessage += `🎉 Event Type: ${eventType}\n`;
+            whatsappMessage += `Product Type: ${productType}\n`;
+            whatsappMessage += `Quantity: ${quantity}\n`;
+            whatsappMessage += `Event Type: ${eventType}\n`;
             
             if (eventDate) {
-                whatsappMessage += `📅 Event Date: ${eventDate}\n`;
+                whatsappMessage += `Event Date: ${eventDate}\n`;
             }
             
-            whatsappMessage += `✍️ Custom Engraving: ${engraving}\n`;
-            whatsappMessage += `🚚 Delivery: ${delivery}\n`;
+            whatsappMessage += `Custom Engraving: ${engraving}\n`;
+            whatsappMessage += `Delivery: ${delivery}\n`;
             
             if (message) {
                 whatsappMessage += `\n💬 Additional Details:\n${message}\n`;
