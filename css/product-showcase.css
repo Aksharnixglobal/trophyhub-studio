@@ -1,0 +1,555 @@
+/* Product Showcase Styles */
+.product-showcase {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(180deg, #162D4E 0%, #0F2542 100%);
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Trophy Sizes Grid */
+.trophy-sizes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.trophy-size-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(11, 30, 61, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(46, 125, 215, 0.2);
+    transition: all 0.4s ease;
+    aspect-ratio: 1;
+}
+
+.trophy-size-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 16px 48px rgba(46, 125, 215, 0.4);
+    border-color: rgba(46, 125, 215, 0.5);
+}
+
+.trophy-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.trophy-size-card .trophy-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: transform 0.4s ease;
+}
+
+.trophy-size-card:hover .trophy-image {
+    transform: scale(1.1);
+}
+
+.size-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #2E7DD7, #5BA3F5);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(46, 125, 215, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.size-overlay .size-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+}
+
+.size-overlay .size-height {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+/* First card gets the best seller badge */
+.trophy-size-card:first-child::after {
+    content: "Best Seller";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #1A1A1A;
+    padding: 0.4rem 0.8rem;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 16px rgba(255, 215, 0, 0.3);
+}
+
+.product-details {
+    padding: var(--spacing-lg);
+}
+
+.product-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.product-header h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+    font-family: 'Playfair Display', serif;
+}
+
+.product-code {
+    display: inline-block;
+    background: rgba(46, 125, 215, 0.2);
+    color: #5BA3F5;
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(46, 125, 215, 0.3);
+}
+
+.product-description {
+    margin-bottom: var(--spacing-xl);
+}
+
+.product-description p {
+    color: rgba(192, 197, 206, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.size-options {
+    margin-bottom: var(--spacing-xl);
+}
+
+.size-options h5 {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+}
+
+.sizes {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.size-item {
+    background: rgba(22, 45, 78, 0.6);
+    border: 2px solid rgba(46, 125, 215, 0.3);
+    border-radius: 12px;
+    padding: var(--spacing-md);
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    min-width: 80px;
+}
+
+.size-item:hover {
+    border-color: rgba(46, 125, 215, 0.6);
+    background: rgba(22, 45, 78, 0.8);
+    transform: translateY(-2px);
+}
+
+.size-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #2E7DD7;
+    margin-bottom: 0.2rem;
+}
+
+.size-height {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(192, 197, 206, 0.8);
+    font-weight: 600;
+}
+
+.product-features {
+    margin-bottom: var(--spacing-xl);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    color: rgba(192, 197, 206, 0.9);
+    font-weight: 500;
+}
+
+.feature-item svg {
+    color: #2E7DD7;
+    flex-shrink: 0;
+}
+
+.product-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.product-actions .btn {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-gallery {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .trophy-sizes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+        order: 1;
+    }
+    
+    .product-details {
+        order: 2;
+        padding: var(--spacing-md);
+    }
+    
+    .product-header h4 {
+        font-size: 1.6rem;
+    }
+    
+    .sizes {
+        justify-content: center;
+    }
+    
+    .product-actions {
+        flex-direction: column;
+    }
+    
+    .product-actions .btn {
+        min-width: unset;
+    }
+}
+
+/* Cricket Champion Trophy Section - Two Column Layout */
+.cricket-champion {
+    background: linear-gradient(180deg, #0F2542 0%, #162D4E 100%);
+}
+
+.champion-gallery {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trophy-showcase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.trophy-images-section {
+    width: 100%;
+}
+
+.trophy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.trophy-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-radius: 15px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.trophy-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.trophy-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    background: linear-gradient(45deg, #0B1E3D, #2E7DD7);
+}
+
+.trophy-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.trophy-image-container:hover .trophy-image {
+    transform: scale(1.05);
+}
+
+.trophy-badge.best-seller {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #1A1A1A;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 2;
+}
+
+.trophy-details-section {
+    padding: 2rem;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.available-models {
+    margin: 2rem 0;
+}
+
+.available-models h4 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.model-card {
+    background: linear-gradient(145deg, rgba(46, 125, 215, 0.15), rgba(46, 125, 215, 0.05));
+    border: 1px solid rgba(46, 125, 215, 0.3);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.model-card:hover {
+    background: linear-gradient(145deg, rgba(46, 125, 215, 0.2), rgba(46, 125, 215, 0.1));
+    transform: translateY(-2px);
+}
+
+.model-code {
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.model-size {
+    color: #A0AABD;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .trophy-showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .trophy-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .trophy-image-container {
+        height: 150px;
+    }
+    
+    .models-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .trophy-details-section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .trophy-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .models-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.champion-details {
+    padding: var(--spacing-xl);
+}
+
+/* Zoom Overlay */
+.zoom-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(46, 125, 215, 0.9);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+.trophy-image-container:hover .zoom-overlay,
+.champion-image-container:hover .zoom-overlay {
+    opacity: 1;
+}
+
+.trophy-image-container,
+.champion-image-container {
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.modal-content {
+    position: relative;
+    margin: 2% auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10001;
+    background: rgba(46, 125, 215, 0.8);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.close-button:hover {
+    background: rgba(46, 125, 215, 1);
+    transform: scale(1.1);
+}
+
+.modal-caption {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    color: white;
+}
+
+.modal-caption h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5BA3F5;
+    margin: 0;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .close-button {
+        top: -60px;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .modal-caption h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .trophy-sizes-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .trophy-size-card {
+        aspect-ratio: 4/3;
+    }
+}

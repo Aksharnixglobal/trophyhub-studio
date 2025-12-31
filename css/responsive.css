@@ -1,102 +1,467 @@
-/* Responsive Styles for TrophyHub Studio */
+/* Modern Responsive Styles for TrophyHub Studio */
 
+/* ============================================
+   TABLET & SMALL DESKTOP (768px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .hero-title-main {
+        font-size: clamp(2.2rem, 5vw, 3.5rem);
+    }
+
+    .hero-stats {
+        gap: var(--spacing-md);
+        padding: var(--spacing-md);
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   MOBILE LANDSCAPE (481px - 768px)
+   ============================================ */
 @media (max-width: 768px) {
+    :root {
+        --spacing-xl: 2rem;
+        --spacing-2xl: 3rem;
+        --spacing-3xl: 4rem;
+    }
+
     /* Header Mobile */
+    .header {
+        padding: 1rem 0;
+    }
+
     .header .container {
-        flex-direction: column;
-        gap: 1rem;
+        flex-wrap: wrap;
     }
 
     .logo h1 {
         font-size: 1.5rem;
     }
 
-    .nav {
-        flex-direction: column;
-        gap: 0.8rem;
-        width: 100%;
-        text-align: center;
+    .logo-icon {
+        width: 28px;
+        height: 28px;
     }
 
-    .nav a {
-        display: block;
-        padding: 0.5rem;
+    .tagline {
+        font-size: 0.7rem;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-sm);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        animation: slideInDown 0.3s ease-out;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: var(--spacing-sm);
+    }
+
+    .nav-phone {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
     }
 
     /* Hero Mobile */
     .hero {
-        padding: 3rem 1.5rem;
+        min-height: auto;
+        padding: var(--spacing-3xl) var(--spacing-md);
     }
 
-    .hero-title {
-        font-size: 2rem;
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .hero-title-top {
+        font-size: 0.9rem;
+    }
+
+    .hero-title-main {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+    }
+
+    .hero-title-accent {
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
     }
 
     .hero-subtitle {
         font-size: 1rem;
     }
 
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        padding: var(--spacing-md);
+    }
+
+    .stat-divider {
+        width: 60%;
+        height: 1px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
-        gap: 0.8rem;
+        width: 100%;
     }
 
     .btn {
         width: 100%;
-        padding: 0.9rem 1.5rem;
+        padding: 1rem 1.5rem;
     }
 
-    /* Section Titles */
+    .hero-scroll-indicator {
+        display: none;
+    }
+
+    /* Section Headers */
+    .section-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+
     .section-title {
-        font-size: 1.8rem;
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
     }
 
     /* Features Grid */
+    .features {
+        padding: var(--spacing-2xl) 0;
+    }
+
     .features-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: var(--spacing-md);
     }
 
-    /* Steps */
+    .feature-card {
+        padding: var(--spacing-lg);
+    }
+
+    .feature-card h4 {
+        font-size: 1.3rem;
+    }
+
+    /* How It Works */
+    .how-it-works {
+        padding: var(--spacing-2xl) 0;
+    }
+
     .steps {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: var(--spacing-md);
     }
 
-    /* Delivery Options */
+    .step {
+        padding: var(--spacing-lg);
+    }
+
+    .step-number {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+
+    /* Delivery Section */
+    .delivery {
+        padding: var(--spacing-2xl) 0;
+    }
+
     .delivery-options {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
     }
 
-    /* Product Grid */
-    .product-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    /* CTA Section */
+    .cta {
+        padding: var(--spacing-2xl) 0;
     }
 
-    /* Filter Buttons */
-    .filter-buttons {
+    .cta h3 {
+        font-size: 1.8rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
         flex-direction: column;
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--spacing-2xl) 0 var(--spacing-md);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+
+    .footer-links a::before {
+        display: none;
+    }
+
+    .footer-links a:hover {
+        padding-left: 0;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+
+    /* WhatsApp Float */
+    .whatsapp-float {
+        width: 56px;
+        height: 56px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.8rem;
+    }
+
+    /* Page Hero */
+    .page-hero {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+
+    .page-hero h2 {
+        font-size: 2rem;
+    }
+
+    .page-hero p {
+        font-size: 1rem;
+    }
+
+    /* Catalog Filter */
+    .catalog-filter {
+        padding: var(--spacing-md) 0;
+    }
+
+    .filter-buttons {
         gap: 0.5rem;
     }
 
     .filter-btn {
-        width: 100%;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    /* Product Grid */
+    .catalog {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .product-image {
+        height: 300px;
     }
 
     /* Quote Form */
+    .quote-section {
+        padding: var(--spacing-2xl) 0;
+    }
+
     .quote-form {
-        padding: 1.5rem;
+        padding: var(--spacing-lg);
     }
 
     .form-row {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: var(--spacing-sm);
     }
 
     .quote-info {
         grid-template-columns: 1fr;
     }
+}
+
+/* ============================================
+   MOBILE PORTRAIT (320px - 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    :root {
+        --spacing-sm: 0.75rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+        --spacing-2xl: 2.5rem;
+        --spacing-3xl: 3rem;
+    }
+
+    /* Typography Adjustments */
+    html {
+        font-size: 14px;
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero-title-main {
+        font-size: 1.8rem;
+    }
+
+    .hero-title-accent {
+        font-size: 1.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        padding: 0.9rem 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    /* Spacing Adjustments */
+    .container {
+        padding: 0 1rem;
+    }
+
+    .features-grid,
+    .steps,
+    .delivery-options {
+        gap: 1rem;
+    }
+
+    .feature-card,
+    .step,
+    .delivery-card {
+        padding: 1rem;
+    }
+
+    /* Product Cards */
+    .product-image {
+        height: 250px;
+    }
+
+    .product-info {
+        padding: 1rem;
+    }
+
+    .product-info h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Hero Stats - Simplified */
+    .hero-stats {
+        padding: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    /* WhatsApp Float - Smaller */
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        bottom: 16px;
+        right: 16px;
+        font-size: 1.6rem;
+    }
+
+    /* Filter Buttons - Stack Completely */
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    .header,
+    .whatsapp-float,
+    .hero-buttons,
+    .cta,
+    .footer,
+    .catalog-filter {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .product-card,
+    .feature-card {
+        page-break-inside: avoid;
+    }
+}
 
     /* Footer */
     .footer-content {
