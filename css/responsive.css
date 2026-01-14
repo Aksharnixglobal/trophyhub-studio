@@ -41,6 +41,10 @@
         --spacing-3xl: 4rem;
     }
 
+    body {
+        padding-top: 60px;
+    }
+
     /* Header Mobile */
     .header {
         padding: 0.75rem 0;
