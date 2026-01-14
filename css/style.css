@@ -56,9 +56,20 @@
     box-sizing: border-box;
 }
 
+/* Modern Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -69,6 +80,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
 .container {
